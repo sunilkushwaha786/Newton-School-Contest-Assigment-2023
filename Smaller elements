@@ -1,0 +1,17 @@
+static int smallerElements(int a[], int n, int k){
+        //Enter your code here
+        int first =0;
+        int last = n-1;
+        int ans = 0;
+        while(first<=last){
+                int mid = (first+last)/2;
+                if(k<a[mid]){
+                        last=mid-1;
+                        ans = mid;
+                }else{
+                        first = mid+1;
+                        ans =first;
+                }
+        }
+        return ans;
+}
