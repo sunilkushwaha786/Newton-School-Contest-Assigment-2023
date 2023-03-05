@@ -1,0 +1,17 @@
+function uniqueNumber(arrOfNum){
+    // write code here
+    // return the output , do not use console.log here
+    const arr=[];
+
+for(let i of arrOfNum){
+
+if(arr.indexOf(i)===-1){
+
+arr.push(i);
+
+}
+
+}
+
+return arr;
+}
